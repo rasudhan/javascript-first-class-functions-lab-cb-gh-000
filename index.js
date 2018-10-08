@@ -8,6 +8,11 @@ const countdown = (cb) => {
   window.setTimeout(cb, 2000)
 }
 
+function createMultiplier(multiplyValue) {
+  return function (value) {
+    return multiplyValue * value;
+  };
+}
  // 2
 const createMultiplier = (multi) => {
     return function multiplyNumber(number) {
