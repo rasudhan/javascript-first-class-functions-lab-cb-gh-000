@@ -16,7 +16,7 @@ function createMultiplier(multiplyValue) {
  // 2
 const createMultiplier = (multi) => {
     return function multiplyNumber(number) {
-      return multi * val
+      return multi * number
     }
 }
  const doubler = createMultiplier(2)
