@@ -1,6 +1,7 @@
 function countdown(callback) {
-  window.setTimeout(2);
-  callback();
+  setTimeout(function () {
+    callback();
+  }, 2000);
 }
 
 const countdown = (cb) => {
